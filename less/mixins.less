@@ -61,3 +61,12 @@
 .serif-font() {
 	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
+
+// Transitions
+.transition(@transition) {
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  -ms-transition: @transition;
+  -o-transition: @transition;
+  transition: @transition;
+}
