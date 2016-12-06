@@ -346,6 +346,62 @@ header {
     }
 }
 
+// Team AboutSection
+#team-about {
+    .about-item {
+        margin: 0 0 15px;
+        right: 0;
+        .about-link {
+            display: block;
+            position: relative;
+            max-width: 400px;
+            margin: 0 auto;
+            .caption {
+                background: fade(@theme-primary, 90%);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: all ease 0.5s;
+                -webkit-transition: all ease 0.5s;
+                -moz-transition: all ease 0.5s;
+                &:hover {
+                    opacity: 1;
+                }
+                .caption-content {
+                    position: absolute;
+                    width: 100%;
+                    height: 20px;
+                    font-size: 20px;
+                    text-align: center;
+                    top: 50%;
+                    margin-top: -12px;
+                    color: white;
+                    i {
+                        margin-top: -12px;
+                    }
+                    h3,
+                    h4 {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    * {
+        z-index: 2;
+    }
+}
+
+@media(min-width:767px) {
+    #team-about {
+        .portfolio-item {
+            margin: 0 0 30px;
+        }
+    }
+}
+
+
 // Button Styles
 .btn-default {
     .button-variant(@gray-darker;white;white);
@@ -424,5 +480,9 @@ body {
 }
 
 .products-bg {
+    padding: 180px 0;
+}
+
+.team-bg {
     padding: 180px 0;
 }
