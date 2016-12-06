@@ -346,6 +346,77 @@ header {
     }
 }
 
+// Team About Section
+#team-about {
+    .team-header {
+        margin-bottom: 1em;
+    }
+    .about-item {
+        margin: 0 0 15px;
+        right: 0;
+        .about-wrapper {
+            display: block;
+            position: relative;
+            max-width: 400px;
+            margin: 0 auto;
+            .caption {
+                background: fade(@theme-primary, 90%);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: all ease 0.5s;
+                -webkit-transition: all ease 0.5s;
+                -moz-transition: all ease 0.5s;
+                &:hover {
+                    opacity: 1;
+                }
+                .caption-content {
+                    position: absolute;
+                    width: 100%;
+                    height: 20px;
+                    font-size: 20px;
+                    text-align: center;
+                    top: 50%;
+                    margin-top: -12px;
+                    color: white;
+                    i {
+                        margin-top: -12px;
+                    }
+                    h3,
+                    h4 {
+                        margin: 0;
+                    }
+                    .name {
+                        //font-size: 18px;
+                        font-size: 2.4rem;
+                        font-weight: 300;
+                        margin-bottom: 10px;
+                    }
+                    .title {
+                        //font-size: 12px;
+                        font-size: 1.4rem;
+                        font-weight: 700;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+    * {
+        z-index: 2;
+    }
+}
+
+@media(min-width:767px) {
+    #team-about {
+        .portfolio-item {
+            margin: 0 0 30px;
+        }
+    }
+}
+
+
 // Button Styles
 .btn-default {
     .button-variant(@gray-darker;white;white);
@@ -424,5 +495,9 @@ body {
 }
 
 .products-bg {
+    padding: 180px 0;
+}
+
+.team-bg {
     padding: 180px 0;
 }
