@@ -503,3 +503,67 @@ body {
 .portfolio-bg {
     padding: 180px 0;
 }
+
+// Test Filter Portfolio
+html {
+    overflow-y: scroll;
+}
+
+.portfolio-full {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    .transition(all 1s ease);
+}
+
+#filters {
+    margin: 1%;
+    padding: 0;
+    list-style: none;
+
+    li {
+        float: left;
+
+        span {
+            display: block;
+            padding: 5px 20px;
+            text-decoration: none;
+            color: #666;
+            cursor: pointer;
+
+            &.active {
+                background: #e95a44;
+                color: #fff;
+            }
+        }
+    }
+}
+
+#portfoliolist {
+    .portfolio {
+        .box-sizing;
+        width: 25%;
+        margin: 1%;
+        display: none;
+        float: left;
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+            position: relative;
+            top: 0;
+            .transition(all 600ms cubic-bezier(0.645, 0.045, 0.355, 1));
+        }
+
+        .label {
+
+        }
+    }
+
+    .portfolio-wrapper {
+        overflow: hidden;
+        position: relative !important;
+        background: #666;
+        cursor: pointer;
+    }
+}
