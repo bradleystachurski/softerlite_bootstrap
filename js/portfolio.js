@@ -1,5 +1,7 @@
 // MixItUp Integration for portfolio.html only
 
+// Todo: Create multiFiler functionality
+
 $(function () {
 
     var filterList = {
