@@ -1,6 +1,7 @@
 // MixItUp Integration for portfolio.html only
 
 // Todo: Create multiFiler functionality
+// Todo: Hover effect change
 
 $(function () {
 
