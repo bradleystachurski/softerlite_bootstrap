@@ -90,20 +90,99 @@
 </section>
 
 <section id="portfolio-full">
+
   <div class="container portfolio-container">
 
-    <ul id="filters" class="clearfix">
-      <li><span class="filter active" data-filter=".app, .card, .icon, .logo, .web">All</span></li>
-      <li><span class="filter" data-filter=".app">App</span></li>
-      <li><span class="filter" data-filter=".card">Card</span></li>
-      <li><span class="filter" data-filter=".icon">Icon</span></li>
-      <li><span class="filter" data-filter=".logo">Logo</span></li>
-      <li><span class="filter" data-filter=".web">Web</span></li>
-    </ul>
+    <form class="controls" id="Filters">
+      <!-- We can add an unlimited number of "filter groups" using the following format: -->
+
+      <fieldset>
+        <h4>Shapes</h4>
+        <div class="checkbox">
+          <input type="checkbox" value=".square"/>
+          <label>Square</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".circle"/>
+          <label>Circle</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".triangle"/>
+          <label>Triangle</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <h4>Colours</h4>
+        <div class="checkbox">
+          <input type="checkbox" value=".white"/>
+          <label>White</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".green"/>
+          <label>Green</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".blue"/>
+          <label>Blue</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <h4>Sizes</h4>
+        <div class="checkbox">
+          <input type="checkbox" value=".sm"/>
+          <label>Small</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".lrg"/>
+          <label>Large</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <h4>Region</h4>
+        <div class="checkbox">
+          <input type="checkbox" value=".chicago"/>
+          <label>Chicago</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".milwaukee"/>
+          <label>Milwaukee</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <h4>Construction Type</h4>
+        <div class="checkbox">
+          <input type="checkbox" value=".new-construction"/>
+          <label>New Construction</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".renovation-occupied"/>
+          <label>Renovation - Occupied</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".renovation-unoccupied"/>
+          <label>Renovation - Unoccupied</label>
+        </div>
+      </fieldset>
+
+      <button id="Reset">Clear Filters</button>
+    </form>
+
+    <!--<ul id="filters" class="clearfix">-->
+      <!--<li><span class="filter active" data-filter=".app, .card, .icon, .logo, .web">All</span></li>-->
+      <!--<li><span class="filter" data-filter=".app">App</span></li>-->
+      <!--<li><span class="filter" data-filter=".card">Card</span></li>-->
+      <!--<li><span class="filter" data-filter=".icon">Icon</span></li>-->
+      <!--<li><span class="filter" data-filter=".logo">Logo</span></li>-->
+      <!--<li><span class="filter" data-filter=".web">Web</span></li>-->
+    <!--</ul>-->
 
     <div id="portfoliolist">
 
-      <div class="portfolio logo" data-cat="logo">
+      <div class="mix chicago new-construction portfolio logo" data-cat="logo">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/logo/5.jpg" alt="" />
           <div class="label">
@@ -116,7 +195,7 @@
         </div>
       </div>
 
-      <div class="portfolio app" data-cat="app">
+      <div class="mix chicago renovation-occupied portfolio app" data-cat="app">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/app/1.jpg" alt="" />
           <div class="label">
@@ -129,7 +208,7 @@
         </div>
       </div>
 
-      <div class="portfolio web" data-cat="web">
+      <div class="mix portfolio web" data-cat="web">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/web/4.jpg" alt="" />
           <div class="label">
@@ -142,7 +221,7 @@
         </div>
       </div>
 
-      <div class="portfolio card" data-cat="card">
+      <div class="mix portfolio card" data-cat="card">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/card/1.jpg" alt="" />
           <div class="label">
@@ -155,7 +234,7 @@
         </div>
       </div>
 
-      <div class="portfolio app" data-cat="app">
+      <div class="mix portfolio app" data-cat="app">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/app/3.jpg" alt="" />
           <div class="label">
@@ -168,7 +247,7 @@
         </div>
       </div>
 
-      <div class="portfolio card" data-cat="card">
+      <div class="mix portfolio card" data-cat="card">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/card/4.jpg" alt="" />
           <div class="label">
@@ -181,7 +260,7 @@
         </div>
       </div>
 
-      <div class="portfolio card" data-cat="card">
+      <div class="mix portfolio card" data-cat="card">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/card/5.jpg" alt="" />
           <div class="label">
@@ -194,7 +273,7 @@
         </div>
       </div>
 
-      <div class="portfolio logo" data-cat="logo">
+      <div class="mix portfolio logo" data-cat="logo">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/logo/1.jpg" alt="" />
           <div class="label">
@@ -207,7 +286,7 @@
         </div>
       </div>
 
-      <div class="portfolio app" data-cat="app">
+      <div class="mix portfolio app" data-cat="app">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/app/2.jpg" alt="" />
           <div class="label">
@@ -220,7 +299,7 @@
         </div>
       </div>
 
-      <div class="portfolio card" data-cat="card">
+      <div class="mix portfolio card" data-cat="card">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/card/2.jpg" alt="" />
           <div class="label">
@@ -233,7 +312,7 @@
         </div>
       </div>
 
-      <div class="portfolio logo" data-cat="logo">
+      <div class="mix portfolio logo" data-cat="logo">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/logo/6.jpg" alt="" />
           <div class="label">
@@ -246,7 +325,7 @@
         </div>
       </div>
 
-      <div class="portfolio logo" data-cat="logo">
+      <div class="mix portfolio logo" data-cat="logo">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/logo/7.jpg" alt="" />
           <div class="label">
@@ -259,7 +338,7 @@
         </div>
       </div>
 
-      <div class="portfolio icon" data-cat="icon">
+      <div class="mix portfolio icon" data-cat="icon">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/icon/4.jpg" alt="" />
           <div class="label">
@@ -272,7 +351,7 @@
         </div>
       </div>
 
-      <div class="portfolio web" data-cat="web">
+      <div class="mix portfolio web" data-cat="web">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/web/3.jpg" alt="" />
           <div class="label">
@@ -285,7 +364,7 @@
         </div>
       </div>
 
-      <div class="portfolio icon" data-cat="icon">
+      <div class="mix portfolio icon" data-cat="icon">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/icon/1.jpg" alt="" />
           <div class="label">
@@ -298,7 +377,7 @@
         </div>
       </div>
 
-      <div class="portfolio web" data-cat="web">
+      <div class="mix portfolio web" data-cat="web">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/web/2.jpg" alt="" />
           <div class="label">
@@ -311,7 +390,7 @@
         </div>
       </div>
 
-      <div class="portfolio icon" data-cat="icon">
+      <div class="mix portfolio icon" data-cat="icon">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/icon/2.jpg" alt="" />
           <div class="label">
@@ -324,7 +403,7 @@
         </div>
       </div>
 
-      <div class="portfolio icon" data-cat="icon">
+      <div class="mix portfolio icon" data-cat="icon">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/icon/5.jpg" alt="" />
           <div class="label">
@@ -337,7 +416,7 @@
         </div>
       </div>
 
-      <div class="portfolio web" data-cat="web">
+      <div class="mix portfolio web" data-cat="web">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/web/1.jpg" alt="" />
           <div class="label">
@@ -350,7 +429,7 @@
         </div>
       </div>
 
-      <div class="portfolio logo" data-cat="logo">
+      <div class="mix portfolio logo" data-cat="logo">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/logo/3.jpg" alt="" />
           <div class="label">
@@ -363,7 +442,7 @@
         </div>
       </div>
 
-      <div class="portfolio logo" data-cat="logo">
+      <div class="mix portfolio logo" data-cat="logo">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/logo/4.jpg" alt="" />
           <div class="label">
@@ -376,7 +455,7 @@
         </div>
       </div>
 
-      <div class="portfolio icon" data-cat="icon">
+      <div class="mix portfolio icon" data-cat="icon">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/icon/3.jpg" alt="" />
           <div class="label">
@@ -389,7 +468,7 @@
         </div>
       </div>
 
-      <div class="portfolio card" data-cat="card">
+      <div class="mix portfolio card" data-cat="card">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/card/3.jpg" alt="" />
           <div class="label">
@@ -402,7 +481,7 @@
         </div>
       </div>
 
-      <div class="portfolio logo" data-cat="logo">
+      <div class="mix portfolio logo" data-cat="logo">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/logo/2.jpg" alt="" />
           <div class="label">
