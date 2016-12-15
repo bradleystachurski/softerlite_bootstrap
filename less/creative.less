@@ -773,3 +773,31 @@ input[type="checkbox"]:checked + label:before {
 //    color: @theme-primary;
 //    font: 14px/20px 'Open Sans', Arial, sans-serif;
 //}
+
+#portfolio-full {
+    button {
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 16px;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+        //color: white;
+        border: solid 1px currentColor;
+        background-color: transparent;
+        padding: 1em;
+        margin: 1.5em 1em;
+        border-radius: 4px;
+        cursor: pointer;
+        .transition(all 0.4s ease);
+        color: @theme-primary;
+
+        &:hover {
+            border: solid 1px darken(@theme-primary, 10%);
+            background-color: lighten(@theme-primary, 25%);
+            //background-color: darken(@theme-primary, 2%);
+            color: darken(@theme-primary, 10%);
+        }
+        &:focus {
+            outline: 0 none;
+        }
+    }
+}
