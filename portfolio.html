@@ -96,32 +96,36 @@
     <form class="controls" id="Filters">
       <!-- We can add an unlimited number of "filter groups" using the following format: -->
 
-      <fieldset>
-        <h4>Region</h4>
-        <div class="boxes">
-          <input type="checkbox" value=".chicago" id="box-1">
-          <label for="box-1">Chicago</label>
+      <div class="flex-container">
+        <fieldset>
+          <h4>Region</h4>
+          <div class="boxes">
+            <input type="checkbox" value=".chicago" id="box-1">
+            <label for="box-1">Chicago</label>
 
-          <input type="checkbox" value=".milwaukee" id="box-2">
-          <label for="box-2">Milwaukee</label>
-        </div>
-      </fieldset>
+            <input type="checkbox" value=".milwaukee" id="box-2">
+            <label for="box-2">Milwaukee</label>
+          </div>
+        </fieldset>
 
-      <fieldset>
-        <h4>Construction Type</h4>
-        <div class="boxes">
-          <input type="checkbox" value=".new-construction" id="box-3"/>
-          <label for="box-3">New Construction</label>
+        <fieldset>
+          <h4>Construction Type</h4>
+          <div class="boxes">
+            <input type="checkbox" value=".new-construction" id="box-3"/>
+            <label for="box-3">New Construction</label>
 
-          <input type="checkbox" value=".renovation-occupied" id="box-4"/>
-          <label for="box-4">Renovation - Occupied</label>
+            <input type="checkbox" value=".renovation-occupied" id="box-4"/>
+            <label for="box-4">Renovation - Occupied</label>
 
-          <input type="checkbox" value=".renovation-vacant" id="box-5"/>
-          <label for="box-5">Renovation - Vacant</label>
-        </div>
-      </fieldset>
+            <input type="checkbox" value=".renovation-vacant" id="box-5"/>
+            <label for="box-5">Renovation - Vacant</label>
+          </div>
+        </fieldset>
 
-      <button class="button-reset" id="Reset">Clear Filter</button>
+        <button class="button-reset" id="Reset">Clear Filter</button>
+
+      </div>
+
 
       <!--<button class="btn-primary" id="Reset">Clear Filters</button>-->
     </form>
