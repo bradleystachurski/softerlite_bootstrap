@@ -499,3 +499,305 @@ body {
 .team-bg {
     padding: 180px 0;
 }
+
+.portfolio-bg {
+    padding: 180px 0;
+}
+
+// Portfolio Page
+
+// TODO: Change variables
+
+@color_1: #c09853;
+@color_2: #666;
+@color_3: #fff;
+@font-family_1: Helvetica, Arial, Verdana;
+@font-family_2: arial;
+
+.portfolio-container {
+    font-family: @font-family_1;
+    font-size: 12px;
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+#filters {
+    margin: 1%;
+    padding: 0;
+    list-style: none;
+    li {
+        float: left;
+        span {
+            display: block;
+            padding: 5px 20px;
+            text-decoration: none;
+            color: @color_2;
+            cursor: pointer;
+        }
+        span.active {
+            background: #e95a44;
+            color: @color_3;
+        }
+    }
+}
+#portfoliolist {
+    .portfolio {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        width: 23%;
+        margin: 1%;
+        display: none;
+        float: left;
+        overflow: hidden;
+    }
+}
+.portfolio-wrapper {
+    overflow: hidden;
+    position: relative !important;
+    background: #666;
+    cursor: pointer;
+}
+.portfolio {
+    img {
+        max-width: 100%;
+        position: relative;
+        top: 0;
+        -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    .label {
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        bottom: -40px;
+        -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    .label-bg {
+        background: #e95a44;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .label-text {
+        color: @color_3;
+        position: relative;
+        z-index: 500;
+        padding: 5px 8px;
+    }
+    .text-category {
+        display: block;
+        font-size: 9px;
+    }
+    &:hover {
+        .label {
+            bottom: 0;
+        }
+        img {
+            top: -30px;
+        }
+    }
+}
+.clearfix {
+    &:before {
+        content: '\0020';
+        display: block;
+        overflow: hidden;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    &:after {
+        content: '\0020';
+        display: block;
+        overflow: hidden;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        clear: both;
+    }
+    zoom: 1;
+}
+.row {
+    &:before {
+        content: '\0020';
+        display: block;
+        overflow: hidden;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    &:after {
+        content: '\0020';
+        display: block;
+        overflow: hidden;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        clear: both;
+    }
+    zoom: 1;
+}
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+/* #Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .portfolio-container {
+        width: 768px;
+    }
+}
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+    .portfolio-container {
+        width: 95%;
+    }
+    #portfoliolist {
+        .portfolio {
+            width: 48%;
+            margin: 1%;
+        }
+    }
+}
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .portfolio-container {
+        width: 70%;
+    }
+}
+
+// End of converted CSS to LESS for Portfolio
+
+@color_1: white;
+@color_2: #333;
+@font-family_1: 'Helvetica Neue', arial, sans-serif;
+
+/**
+ * Form & Checkbox Styles
+ */
+/**
+ * Container/Target Styles
+ */
+/**
+ * Fail message styles
+ */
+fieldset {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1em 0 0;
+    //background: #666;
+    padding: .5em;
+    border-radius: 3px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+fieldset {
+    h4 {
+        color: @theme-primary;
+        text-align: center;
+    }
+}
+.boxes {
+    margin: auto;
+    padding: 10px;
+}
+
+/*Checkboxes styles*/
+input[type="checkbox"] { display: none; }
+
+input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    font: 14px/20px 'Open Sans', Arial, sans-serif;
+    color: @theme-primary;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+input[type="checkbox"] + label:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #6cc0e5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .6;
+    -webkit-transition: all .12s, border-color .08s;
+    transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+    width: 10px;
+    top: -5px;
+    left: 5px;
+    border-radius: 0;
+    opacity: 1;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+//#Reset {
+//    color: @theme-primary;
+//    font: 14px/20px 'Open Sans', Arial, sans-serif;
+//}
+
+#portfolio-full {
+    button {
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 16px;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+        //color: white;
+        border: solid 1px currentColor;
+        background-color: transparent;
+        padding: 1em;
+        margin: 1.5em 1em;
+        border-radius: 4px;
+        cursor: pointer;
+        .transition(all 0.4s ease);
+        color: @theme-primary;
+
+        &:hover {
+            border: solid 1px darken(@theme-primary, 10%);
+            background-color: lighten(@theme-primary, 25%);
+            //background-color: darken(@theme-primary, 2%);
+            color: darken(@theme-primary, 10%);
+        }
+        &:focus {
+            outline: 0 none;
+        }
+    }
+}
