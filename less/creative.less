@@ -707,74 +707,64 @@ fieldset {
     display: inline-block;
     vertical-align: top;
     margin: 0 1em 0 0;
-    background: #666;
+    //background: #666;
     padding: .5em;
     border-radius: 3px;
 }
-.checkbox {
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+fieldset {
+    h4 {
+        color: @theme-primary;
+        text-align: center;
+    }
+}
+.boxes {
+    margin: auto;
+    padding: 10px;
+}
+
+/*Checkboxes styles*/
+input[type="checkbox"] { display: none; }
+
+input[type="checkbox"] + label {
     display: block;
     position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    font: 14px/20px 'Open Sans', Arial, sans-serif;
+    color: @theme-primary;
     cursor: pointer;
-    margin-bottom: 8px;
-    input[type="checkbox"] {
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        cursor: pointer;
-        margin: 0;
-        opacity: 0;
-        z-index: 1;
-    }
-    label {
-        display: inline-block;
-        vertical-align: top;
-        text-align: left;
-        padding-left: 1.5em;
-        &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 18px;
-            height: 18px;
-            margin-right: 10px;
-            background: #ddd;
-            border-radius: 3px;
-        }
-        &:after {
-            content: '';
-            display: block;
-            position: absolute;
-            content: '';
-            position: absolute;
-            top: 4px;
-            left: 4px;
-            width: 10px;
-            height: 10px;
-            border-radius: 2px;
-            background: #68b8c4;
-            opacity: 0;
-            pointer-events: none;
-        }
-    }
-    input {
-        &:checked {
-            &~label {
-                &:after {
-                    opacity: 1;
-                }
-            }
-        }
-        &:focus {
-            &~label {
-                &:before {
-                    background: #eee;
-                }
-            }
-        }
-    }
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+input[type="checkbox"] + label:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #6cc0e5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .6;
+    -webkit-transition: all .12s, border-color .08s;
+    transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+    width: 10px;
+    top: -5px;
+    left: 5px;
+    border-radius: 0;
+    opacity: 1;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }

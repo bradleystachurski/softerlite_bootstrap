@@ -97,74 +97,27 @@
       <!-- We can add an unlimited number of "filter groups" using the following format: -->
 
       <fieldset>
-        <h4>Shapes</h4>
-        <div class="checkbox">
-          <input type="checkbox" value=".square"/>
-          <label>Square</label>
-        </div>
-        <div class="checkbox">
-          <input type="checkbox" value=".circle"/>
-          <label>Circle</label>
-        </div>
-        <div class="checkbox">
-          <input type="checkbox" value=".triangle"/>
-          <label>Triangle</label>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <h4>Colours</h4>
-        <div class="checkbox">
-          <input type="checkbox" value=".white"/>
-          <label>White</label>
-        </div>
-        <div class="checkbox">
-          <input type="checkbox" value=".green"/>
-          <label>Green</label>
-        </div>
-        <div class="checkbox">
-          <input type="checkbox" value=".blue"/>
-          <label>Blue</label>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <h4>Sizes</h4>
-        <div class="checkbox">
-          <input type="checkbox" value=".sm"/>
-          <label>Small</label>
-        </div>
-        <div class="checkbox">
-          <input type="checkbox" value=".lrg"/>
-          <label>Large</label>
-        </div>
-      </fieldset>
-
-      <fieldset>
         <h4>Region</h4>
-        <div class="checkbox">
-          <input type="checkbox" value=".chicago"/>
-          <label>Chicago</label>
-        </div>
-        <div class="checkbox">
-          <input type="checkbox" value=".milwaukee"/>
-          <label>Milwaukee</label>
+        <div class="boxes">
+          <input type="checkbox" value=".chicago" id="box-1">
+          <label for="box-1">Chicago</label>
+
+          <input type="checkbox" value=".milwaukee" id="box-2">
+          <label for="box-2">Milwaukee</label>
         </div>
       </fieldset>
 
       <fieldset>
         <h4>Construction Type</h4>
-        <div class="checkbox">
-          <input type="checkbox" value=".new-construction"/>
-          <label>New Construction</label>
-        </div>
-        <div class="checkbox">
-          <input type="checkbox" value=".renovation-occupied"/>
-          <label>Renovation - Occupied</label>
-        </div>
-        <div class="checkbox">
-          <input type="checkbox" value=".renovation-unoccupied"/>
-          <label>Renovation - Unoccupied</label>
+        <div class="boxes">
+          <input type="checkbox" value=".new-construction" id="box-3"/>
+          <label for="box-3">New Construction</label>
+
+          <input type="checkbox" value=".renovation-occupied" id="box-4"/>
+          <label for="box-4">Renovation - Occupied</label>
+
+          <input type="checkbox" value=".renovation-vacant" id="box-5"/>
+          <label for="box-5">Renovation - Vacant</label>
         </div>
       </fieldset>
 
@@ -208,7 +161,7 @@
         </div>
       </div>
 
-      <div class="mix portfolio web" data-cat="web">
+      <div class="mix milwaukee renovation-vacant portfolio web" data-cat="web">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/web/4.jpg" alt="" />
           <div class="label">
@@ -221,7 +174,7 @@
         </div>
       </div>
 
-      <div class="mix portfolio card" data-cat="card">
+      <div class="mix chicago renovation-vacant portfolio card" data-cat="card">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/card/1.jpg" alt="" />
           <div class="label">
@@ -234,7 +187,7 @@
         </div>
       </div>
 
-      <div class="mix portfolio app" data-cat="app">
+      <div class="mix milwaukee new-construction portfolio app" data-cat="app">
         <div class="portfolio-wrapper">
           <img src="img/test/portfolios/app/3.jpg" alt="" />
           <div class="label">
