@@ -1,35 +1,11 @@
-// MixItUp Integration for portfolio.html only
+/*
+* **************************************************
+* MixItUp Integration for portfolio.html page
+* **************************************************
+*
+* */
 
-// Todo: Create multiFiler functionality
 // Todo: Hover effect change
-
-//$(function () {
-//
-//    var filterList = {
-//
-//        init: function () {
-//
-//            // MixItUp plugin
-//            // http://mixitup.io
-//            $('#portfoliolist').mixItUp({
-//                selectors: {
-//                    target: '.portfolio',
-//                    filter: '.filter'
-//                },
-//                load: {
-//                    filter: '.app, .card, .icon, .logo, .web'
-//                }
-//            });
-//
-//        }
-//
-//    };
-//
-//    // Run the show!
-//    filterList.init();
-//
-//
-//});
 
 // To keep our code clean and modular, all custom functionality will be contained inside a single object literal called "checkboxFilter".
 
@@ -182,4 +158,42 @@ $(function(){
             duration: 600
         }
     });
+});
+
+/*
+ *
+ * **************************************************
+ * Filter hover effects
+ * **************************************************
+ *
+ * */
+
+
+$(function() {
+    $('.sub-list-region').fadeTo(0, 0);
+    $('.sub-list-construction').fadeTo(0, 0);
+
+    function showDivRegion() {
+        $('.sub-list-region').fadeTo(100, 1);
+        $('.sub-list-region').css('zIndex', 999);
+        $('.sub-list-region').css('position', 'relative');
+    }
+
+    function showDivConstruction() {
+        $('.sub-list-construction').fadeTo(100, 1);
+        $('.sub-list-construction').css('zIndex', 999);
+        $('.sub-list-construction').css('position', 'relative');
+    }
+
+    function hideDivRegion() {
+        $('.sub-list-region').fadeTo(100, 0);
+    }
+
+    function hideDivConstruction() {
+        $('.sub-list-construction').fadeTo(100, 0);
+    }
+
+    $('.mouse-hover-region').on('mouseenter', showDivRegion).on('mouseleave', hideDivRegion);
+    $('.mouse-hover-construction').on('mouseenter', showDivConstruction).on('mouseleave', hideDivConstruction);
+
 });

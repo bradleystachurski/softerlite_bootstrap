@@ -100,28 +100,32 @@
 
         <button class="button-reset" id="Reset">View All</button>
 
-        <fieldset>
-          <h4>Region</h4>
-          <div class="boxes">
-            <input type="checkbox" value=".chicago" id="box-1">
-            <label for="box-1">Chicago</label>
+        <fieldset class="mouse-hover-region">
+          <h4>Location <span class="caret"></span></h4>
+          <div class="sub-list-region">
+            <div class="boxes">
+              <input type="checkbox" value=".chicago" id="box-1">
+              <label for="box-1">Chicago</label>
 
-            <input type="checkbox" value=".milwaukee" id="box-2">
-            <label for="box-2">Milwaukee</label>
+              <input type="checkbox" value=".milwaukee" id="box-2">
+              <label for="box-2">Milwaukee</label>
+            </div>
           </div>
         </fieldset>
 
-        <fieldset>
-          <h4>Construction Type</h4>
-          <div class="boxes">
-            <input type="checkbox" value=".new-construction" id="box-3"/>
-            <label for="box-3">New Construction</label>
+        <fieldset class="mouse-hover-construction">
+          <h4>Construction Type <span class="caret"></span></h4>
+          <div class="sub-list-construction">
+            <div class="boxes">
+              <input type="checkbox" value=".new-construction" id="box-3"/>
+              <label for="box-3">New Construction</label>
 
-            <input type="checkbox" value=".renovation-occupied" id="box-4"/>
-            <label for="box-4">Renovation - Occupied</label>
+              <input type="checkbox" value=".renovation-occupied" id="box-4"/>
+              <label for="box-4">Renovation - Occupied</label>
 
-            <input type="checkbox" value=".renovation-vacant" id="box-5"/>
-            <label for="box-5">Renovation - Vacant</label>
+              <input type="checkbox" value=".renovation-vacant" id="box-5"/>
+              <label for="box-5">Renovation - Vacant</label>
+            </div>
           </div>
         </fieldset>
 
@@ -129,15 +133,6 @@
 
 
     </form>
-
-    <!--<ul id="filters" class="clearfix">-->
-      <!--<li><span class="filter active" data-filter=".app, .card, .icon, .logo, .web">All</span></li>-->
-      <!--<li><span class="filter" data-filter=".app">App</span></li>-->
-      <!--<li><span class="filter" data-filter=".card">Card</span></li>-->
-      <!--<li><span class="filter" data-filter=".icon">Icon</span></li>-->
-      <!--<li><span class="filter" data-filter=".logo">Logo</span></li>-->
-      <!--<li><span class="filter" data-filter=".web">Web</span></li>-->
-    <!--</ul>-->
 
     <div id="portfoliolist">
 
