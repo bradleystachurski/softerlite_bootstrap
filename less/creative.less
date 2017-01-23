@@ -965,3 +965,23 @@ input[type="checkbox"]:checked + label:before {
         }
     }
 }
+
+// Modal close button styling
+.btn {
+    &.btn-close {
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: .1em;
+        padding: 13px 17px;
+        .border-radius(2px);
+        transition: background-color .1s linear;
+        color: #000;
+        background-color: @default_color;
+        border: 1px solid darken(@default_color, 10%);
+
+        &:hover {
+            background-color: darken(@default_color, 10%);
+        }
+
+    }
+}
