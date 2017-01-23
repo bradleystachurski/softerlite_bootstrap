@@ -193,7 +193,10 @@ $(function() {
         $('.sub-list-construction').fadeTo(100, 0);
     }
 
-    $('.mouse-hover-region').on('mouseenter', showDivRegion).on('mouseleave', hideDivRegion);
-    $('.mouse-hover-construction').on('mouseenter', showDivConstruction).on('mouseleave', hideDivConstruction);
+    $('.mouse-hover-region').on('mouseleave', hideDivRegion);
+    $('.mouse-hover-construction').on('mouseleave', hideDivConstruction);
+
+    $('.location-hover').on('mouseenter', showDivRegion);
+    $('.construction-hover').on('mouseenter', showDivConstruction);
 
 });
