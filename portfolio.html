@@ -138,14 +138,16 @@
 
       <div class="mix chicago new-construction portfolio logo" data-cat="logo">
         <div class="portfolio-wrapper">
-          <img src="img/test/portfolios/logo/5.jpg" alt="" />
-          <div class="label">
-            <div class="label-text">
-              <a class="text-title">Bird Document</a>
-              <span class="text-category">Logo</span>
+          <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+            <img src="img/test/portfolios/logo/5.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <a class="text-title">Bird Document</a>
+                <span class="text-category">Logo</span>
+              </div>
+              <div class="label-bg"></div>
             </div>
-            <div class="label-bg"></div>
-          </div>
+          </a>
         </div>
       </div>
 
@@ -453,6 +455,55 @@
 
   </div>
 </section>
+
+<!-- Portfolio Modals -->
+<div id="portfolioModal1" class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <!-- Note: might cause a problem using container-->
+      <!-- Might switch to something like portfolio-model-content-container -->
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2>First Test Modal Content Heading</h2>
+            <hr/>
+            <img src="img/portfolio/fullsize/1.jpg" class="img-responsive img-centered"/>
+            <p>Some paragraph content describing the project</p>
+            <div>
+              <a href="#" class="btn btn-secondary btn-border page-scroll">View Project</a>
+            </div>
+            <br/>
+            <p>
+              <a href="#">View Code (this isn't going to actually be here)</a>
+            </p>
+            <ul class="list-inline item-details">
+              <li>Client:
+                <strong><a href="#">Personal Project?</a></strong>
+              </li>
+              <li>Date:
+                <strong><a href="#">January 2017</a></strong>
+              </li>
+              <li>Service:
+                <strong><a href="#">Window (or door)</a></strong>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End of first test modal section -->
+
+<!--<div id="portfolioModal2" class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true"></div>-->
 
 <!-- jQuery -->
 <script src="vendor/jquery/jquery.min.js"></script>
