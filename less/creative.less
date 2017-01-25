@@ -612,8 +612,9 @@ body {
     font-family: @font-family_1;
     font-size: 12px;
     position: relative;
-    width: 960px;
+    //width: 960px;
     margin: 0 auto;
+    padding: 0;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -647,12 +648,16 @@ body {
 }
 #portfoliolist {
     margin-top: -100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     .portfolio {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         -o-box-sizing: border-box;
         width: 23%;
-        margin: 1%;
+        margin: 0.5%;
         display: none;
         float: left;
         overflow: hidden;
