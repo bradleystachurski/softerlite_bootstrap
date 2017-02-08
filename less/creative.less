@@ -582,12 +582,33 @@ body {
     margin-bottom: -6%;
 }
 
+//.history-bg {
+//    padding: 180px 0;
+//    .history-img {
+//        display: block;
+//        max-width: 100%;
+//        height: auto;
+//    }
+//}
+
 .history-bg {
-    padding: 180px 0;
-    .history-img {
-        display: block;
-        max-width: 100%;
-        height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .history-img-container {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+
+        img {
+            max-width: 100%;
+        }
+
+        .history-img-caption {
+            font-weight: 300;
+            font-size: 12px;
+        }
     }
 }
 
