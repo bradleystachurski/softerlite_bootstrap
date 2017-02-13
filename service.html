@@ -102,33 +102,68 @@
 </section>
 
 <section id="service-form">
-  <form action="//formspree.io/bradley.stachurski@gmail.com" method="post">
-    First Name <br/>
-    <input type="text" name="First Name"/> <br/>
-    Last Name <br/>
-    <input type="text" name="Last Name"/> <br/>
-    Address <br/>
-    <input type="text" name="Address"/> <br/>
-    Unit Number <br/>
-    <input type="text" name="Unit Number"/> <br/>
-    City <br/>
-    <input type="text" name="City"/> <br/>
-    State <br/>
-    <select name="State" id="stateSelect">
-      <option value="Illinois">Illinois</option>
-      <option value="Wisconsin">Wisconsin</option>
-    </select> <br/>
-    Zip Code <br/>
-    <input type="text" name="Zip Code"/> <br/>
-    Description of Issue (including quantity of windows and doors to be serviced) <br/>
-    <input type="text" name="Description of Issue"/> <br/>
-    Phone Number <br/>
-    <input type="text" name="Phone Number"/> <br/>
-    Email <br/>
-    <input type="text" name="Email"/> <br/>
-    <input type="submit" value="Send"/>
-  </form>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+        <h2>Contact</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3">
+        <form action="//formspree.io/bradley.stachurski@gmail.com" id="contact-form" class="form" method="post" role="form">
+          <div class="form-group">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1" required/>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2" required/>
+          </div>
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3"/>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-start-order">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </section>
+
+<!--<section id="service-form">-->
+  <!--<form action="//formspree.io/bradley.stachurski@gmail.com" method="post">-->
+    <!--First Name <br/>-->
+    <!--<input type="text" name="First Name"/> <br/>-->
+    <!--Last Name <br/>-->
+    <!--<input type="text" name="Last Name"/> <br/>-->
+    <!--Address <br/>-->
+    <!--<input type="text" name="Address"/> <br/>-->
+    <!--Unit Number <br/>-->
+    <!--<input type="text" name="Unit Number"/> <br/>-->
+    <!--City <br/>-->
+    <!--<input type="text" name="City"/> <br/>-->
+    <!--State <br/>-->
+    <!--<select name="State" id="stateSelect">-->
+      <!--<option value="Illinois">Illinois</option>-->
+      <!--<option value="Wisconsin">Wisconsin</option>-->
+    <!--</select> <br/>-->
+    <!--Zip Code <br/>-->
+    <!--<input type="text" name="Zip Code"/> <br/>-->
+    <!--Description of Issue (including quantity of windows and doors to be serviced) <br/>-->
+    <!--<input type="text" name="Description of Issue"/> <br/>-->
+    <!--Phone Number <br/>-->
+    <!--<input type="text" name="Phone Number"/> <br/>-->
+    <!--Email <br/>-->
+    <!--<input type="text" name="Email"/> <br/>-->
+    <!--<input type="submit" value="Send"/>-->
+  <!--</form>-->
+<!--</section>-->
 
 <!-- jQuery -->
 <script src="vendor/jquery/jquery.min.js"></script>
@@ -142,7 +177,7 @@
 <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
 <!-- Theme JavaScript -->
-<script src="js/creative.min.js"></script>
+<script src="js/creative.js"></script>
 
 </body>
 
