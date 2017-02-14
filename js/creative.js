@@ -115,7 +115,7 @@
     $('.hidden-form-element').hide();
 
     function showRestOfForm() {
-        $('.hidden-form-element').fadeIn(1000);
+        $('.hidden-form-element').fadeIn(1500);
     }
 
     function hideUnfilledForm() {
