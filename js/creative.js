@@ -116,6 +116,7 @@
 
     function showRestOfForm() {
         $('.hidden-form-element').fadeIn(1500);
+        $('#agree').fadeIn(1500);
     }
 
     $('#firstName').focus(showRestOfForm);
