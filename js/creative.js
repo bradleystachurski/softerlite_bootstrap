@@ -110,4 +110,25 @@
             }
         });
     }
+
+    $('.hidden-form-element').hide();
+
+    function showRestOfForm() {
+        $('.hidden-form-element').fadeIn(1000);
+    }
+
+    function hideUnfilledForm() {
+        if($('#firstName').val() == '' && $('#lastName').val() == '') {
+            $('.hidden-form-element').fadeOut(100);
+            console.log('empty')
+            //console.log($(document.activeElement));
+        }
+    }
+
+    $('#firstName').focus(showRestOfForm);
+    $('#lastName').focus(showRestOfForm);
+
+    $('#firstName').blur(hideUnfilledForm);
+    $('#lastName').blur(hideUnfilledForm);
+
 })(jQuery); // End of use strict
