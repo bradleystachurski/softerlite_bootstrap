@@ -118,16 +118,7 @@
         $('.hidden-form-element').fadeIn(1500);
     }
 
-    function hideUnfilledForm() {
-        if($('#firstName').val() == '' && $('#lastName').val() == '') {
-            $('.hidden-form-element').fadeOut(100);
-        }
-    }
-
     $('#firstName').focus(showRestOfForm);
     $('#lastName').focus(showRestOfForm);
-
-    $('#firstName').blur(hideUnfilledForm);
-    $('#lastName').blur(hideUnfilledForm);
 
 })(jQuery); // End of use strict
