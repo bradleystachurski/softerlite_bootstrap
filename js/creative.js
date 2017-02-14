@@ -111,6 +111,7 @@
         });
     }
 
+    // To show and hide form elements
     $('.hidden-form-element').hide();
 
     function showRestOfForm() {
@@ -120,8 +121,6 @@
     function hideUnfilledForm() {
         if($('#firstName').val() == '' && $('#lastName').val() == '') {
             $('.hidden-form-element').fadeOut(100);
-            console.log('empty')
-            //console.log($(document.activeElement));
         }
     }
 
