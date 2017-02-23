@@ -636,6 +636,91 @@ section#portfolioModals {
     }
 }
 
+// Reorder history heading and pictures on mobile devices
+@media only screen and (min-device-width: 320px) and (max-device-width: 375px) {
+    .history-bg {
+        flex-wrap: wrap;
+
+        .history-title {
+            order: -1;
+        }
+
+        .history-img-container {
+            width: 125px;
+            height: 125px;
+            margin: auto;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 376px) and (max-device-width: 416px) {
+    .history-bg {
+        flex-wrap: wrap;
+
+        .history-title {
+            order: -1;
+        }
+
+        .history-img-container {
+            width: 165px;
+            height: 165px;
+            margin: auto;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 416px) and (max-device-width: 435px) {
+    .history-bg {
+        flex-wrap: wrap;
+
+        .history-title {
+            order: -1;
+        }
+
+        .history-img-container {
+            width: 185px;
+            height: 185px;
+            margin: auto;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 435px) and (max-device-width: 768px) {
+    .history-bg {
+
+        .history-title {
+            h2.section-heading {
+                font-size: 20px;
+            }
+            p.text-faded {
+                font-size: 12px;
+            }
+        }
+
+        .history-img-container {
+            width: 195px;
+            height: 195px;
+            margin: auto;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
 .products-bg {
     padding: 180px 0;
 }
