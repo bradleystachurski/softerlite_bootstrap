@@ -63,7 +63,7 @@
 
     // Change carousel interval on testimonial section
     $('#myCarousel').carousel({
-        interval: 12000
+        interval: 16000
     });
 
     /*
