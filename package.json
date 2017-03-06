@@ -1,9 +1,9 @@
 {
-  "name": "creative",
-  "title": "Creative",
-  "version": "3.3.7+1",
-  "homepage": "http://startbootstrap.com/template-overviews/creative",
-  "author": "Start Bootstrap",
+  "name": "SofterLiteWebsite",
+  "title": "Softer Lite",
+  "version": "1.0",
+  "homepage": "www.softerlite.com",
+  "author": "Brad Stacurski",
   "license": {
     "type": "MIT",
     "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
@@ -24,6 +24,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-creative.git"
+    "url": "https://github.com/bradleystachurski/softerlite_bootstrap"
   }
 }
